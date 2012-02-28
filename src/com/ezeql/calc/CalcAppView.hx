@@ -25,10 +25,8 @@ class CalcAppView extends MVCActor<CalcFacade>, implements IMVCCoreActor
 	public function new(facade:CalcFacade, enabled = true) 
 	{
 		super(facade);
-		stage = Lib.current.stage;
+		calc = new Calc(Lib.current.stage);
 		
-		calc = new Calc();
-		stage.addChild(calc);
 		
 		buttonPadMediator = new ButtonPadMediator(facade, true, calc.pad);
 		displayMediator = new DisplayMediator(facade, true, calc.display);

@@ -1,0 +1,11 @@
+-lib feffects
+-cp src
+-cp ../primevc/PrimeVC/src
+-cp ../primevc/PrimeVC/libs/apparat
+-cp ../primevc/PrimeVC/libs/haxe
+-swf "C:/Users/ezeql/work/onlinetouch/calc primevc/bin/calc.swf"
+-swf-header 800:600:30:FFFFFF
+-swf-version 10.3
+-debug
+-D fdb
+-main Main

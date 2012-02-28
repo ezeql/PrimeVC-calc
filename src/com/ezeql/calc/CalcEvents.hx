@@ -16,6 +16,7 @@ class CalcEvents extends Signals
 	{
 		super();
 		requestOperation = new Signal1();
+		
 	}
 	
 }
