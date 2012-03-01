@@ -3,6 +3,9 @@ package com.ezeql.calc.views.gui;
 import flash.text.TextField;
 import flash.display.Sprite;
 import flash.text.TextFieldAutoSize;
+import flash.text.TextFormatAlign;
+import primevc.gui.components.Panel;
+import primevc.gui.core.UITextField;
 //import primevc.gui.core.UITextField;
 
 /**
@@ -10,36 +13,20 @@ import flash.text.TextFieldAutoSize;
  * @author EzeQL
  */
 
-class Display extends Sprite
+class Display extends Panel
 {
-	public var tf:TextField;
-	//public var tf:UITextField;
+	//public var tf:TextField;
+	public var tf:UITextField;
 	
 	public function new() 
 	{
 		super();
-		draw();
 	}
 	
-	private function draw() 
+	override private function createChildren() 
 	{
-		graphics.beginFill(0x607760, 1);
-		graphics.drawRect(0, 0, 200, 40);
-		graphics.endFill();
-		
-		//tf = new UITextField();
-		tf = new TextField();
-		tf.width = width;
-		tf.height = height;
-		tf.selectable = false;
-		
-		tf.autoSize = TextFieldAutoSize.RIGHT;
-		var textFormat = tf.defaultTextFormat;
-		textFormat.size = 30;
-		tf.defaultTextFormat = textFormat;
-		
-	
-		addChild(tf);
+		tf = new UITextField("display");
+		attach(tf);
+		tf.text = "0";
 	}
-	
 }

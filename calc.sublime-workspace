@@ -7,17 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "package ;\n\nimport com.ezeql.calc.CalcFacade;\nimport flash.display.StageAlign;\nimport flash.display.StageScaleMode;\nimport flash.Lib;\n\n/**\n * ...\n * @author EzeQL\n */\n\nclass Main \n{\n	\n	static function main() \n	{\n		var stage = Lib.current.stage;\n		stage.scaleMode = StageScaleMode.NO_SCALE;\n		stage.align = StageAlign.TOP_LEFT;\n		// entry point\n		\n		var f = new CalcFacade();\n		f.start();\n		var b = new Sprite();\n		b.\n	}\n\n\n	\n}",
-			"file": "src/Main.hx",
-			"file_size": 423,
-			"file_write_time": 129748282302894931,
-			"settings":
-			{
-				"buffer_size": 424,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -71,6 +60,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/ezeql/work/onlinetouch/calc primevc/src/Main.hx",
+		"/C/Users/ezeql/work/onlinetouch/calc primevc/src/com/ezeql/calc/CalcAppView.hx",
+		"/C/Users/ezeql/work/onlinetouch/calc primevc/build.hxml",
+		"/C/Users/ezeql/work/onlinetouch/calc primevc/src/com/ezeql/calc/CalcEvents.hx",
+		"/C/Users/ezeql/work/onlinetouch/calc primevc/bin/Cal14cdsdspri4mevc.swf",
+		"/C/Users/ezeql/work/onlinetouch/primevc/PrimeVC/src/styles",
+		"/C/Users/ezeql/work/onlinetouch/primevc/PrimeVC/src/StyleSheet.hx",
+		"/C/Users/ezeql/work/onlinetouch/calc primevc/bin/calc.swf",
+		"/C/Users/ezeql/work/onlinetouch/calc primevc/calc.hxml"
 	],
 	"find":
 	{
@@ -105,37 +103,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/Main.hx",
-					"settings":
-					{
-						"buffer_size": 424,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								415
-							]
-						],
-						"settings":
-						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/HaXe/HaXe.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -170,6 +139,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 356.0
+	},
+	"output.haxe":
+	{
+		"height": 124.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -195,6 +172,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 263.0,
 	"status_bar_visible": true
 }

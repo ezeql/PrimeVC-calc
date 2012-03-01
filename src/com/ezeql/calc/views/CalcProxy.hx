@@ -27,9 +27,6 @@ class CalcProxy extends Proxy < Bindable<CalcEngine>, CalcEvents >
 		
 		vo.change.send(vo.value, aux.value);
 		
-		trace("mem: " + vo.value.mem);
-		trace("value: " + vo.value.operand);
-		
 	}
 
 	

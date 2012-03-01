@@ -13,24 +13,16 @@ class Calc extends UIWindow
 {
 	public var pad:ButtonPad;
 	public var display:Display;
-
-	public function new(stage) 
-	{
-		super(stage);
-		
-		pad = new ButtonPad();
-		display = new Display();
-		//
-		//addChild(pad);
-		//addChild(display);
-	}
-	
 	
 	override private function createChildren () 
 	{
-		//attach(pad);
-		//attach(pad);
-		
+		pad = new ButtonPad();
+		display = new Display();
+	
+		attach(display);
+		attach(pad);
+
+
 	
 	}
 	

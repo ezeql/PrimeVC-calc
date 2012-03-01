@@ -9,8 +9,8 @@ import com.ezeql.calc.ops.DivOperation;
 import com.ezeql.calc.ops.IOperation;
 import com.ezeql.calc.ops.MultiplyOperation;
 import com.ezeql.calc.ops.PushNumberOperation;
-import com.ezeql.calc.views.gui.Button;
 import com.ezeql.calc.views.gui.ButtonPad;
+import com.ezeql.calc.views.gui.CalcButton;
 import primevc.avm2.events.MouseSignal;
 import primevc.gui.events.KeyboardEvents;
 import primevc.gui.events.MouseEvents;
@@ -42,19 +42,13 @@ class ButtonPadMediator extends Mediator<CalcFacade,ButtonPad>
 		opsHash.set("*", new MultiplyOperation());
 		opsHash.set("/", new DivOperation());
 		opsHash.set("AC", new ClearOperation());
-		for ( i in 0...10) 
-		{
-			opsHash.set(i.string(), new PushNumberOperation(i));		
-		}
-			
-	
-		
+		for ( i in 0...10) 	opsHash.set(i.string(), new PushNumberOperation(i));
     }
 
 	
 	private function buttonHumberClickHandler(e) 
 	{
-		var value = opsHash.get( cast(e.target, Button).text ) ;
+		var value = opsHash.get( cast(e.target, CalcButton).data.value ) ;
 		f.events.requestOperation.send( value );
 		
 		

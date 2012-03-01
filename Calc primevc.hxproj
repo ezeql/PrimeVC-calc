@@ -4,12 +4,12 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin\Cal14cdsdspri4mevc.swf" />
+    <movie path="bin\calc.swf" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
     <movie version="10" />
-    <movie minorVersion="0" />
+    <movie minorVersion="2" />
     <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
   </output>
@@ -19,6 +19,7 @@
     <class path="..\primevc\PrimeVC\src" />
     <class path="..\primevc\PrimeVC\libs\apparat" />
     <class path="..\primevc\PrimeVC\libs\haxe" />
+    <class path="styles" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -45,7 +46,7 @@
     <!-- example: <hidden path="..." /> -->
   </hiddenPaths>
   <!-- Executed before build -->
-  <preBuildCommand />
+  <preBuildCommand>compile_style.bat</preBuildCommand>
   <!-- Executed after build -->
   <postBuildCommand alwaysRun="False" />
   <!-- Other project options -->
