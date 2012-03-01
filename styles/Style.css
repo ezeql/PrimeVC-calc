@@ -1,0 +1,18 @@
+@import url('BasicStyle.css');
+@manifest url('calcmanifest.xml');
+
+Button			{ background: #aaa; color: #fff; skin: Class( primevc.gui.components.skins.ButtonLabelSkin ); }
+Button:hover	{ background: #faa; color: #000; }
+
+
+Calc { 	algorithm: float-ver(top, left);}
+
+ButtonPad { 	algorithm:tile; }
+
+CalcButton { 	width: "50px";height:"50px";font-size:"40px"; }
+CalcButton:hover { 	width: "50px";height:"50px";font-size:"40px"; }
+
+Display          { 	background-color:#607760;width: "400px";height:"50px"; }
+
+
+

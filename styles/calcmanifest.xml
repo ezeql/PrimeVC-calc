@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<componentPackage>
+	<component id="Calc"		superClass="UIWindow"			fullname="com.ezeql.calc.views.gui.Calc" />
+	<component id="CalcButton"		superClass="Button"			fullname="com.ezeql.calc.views.gui.CalcButton" />
+	<component id="Display"		superClass="Panel"			fullname="com.ezeql.calc.views.gui.Display" />
+	<component id="ButtonPad"		superClass="Panel"			fullname="com.ezeql.calc.views.gui.ButtonPad" />
+<!--<component id=""	superClass=""	fullname="cases." />-->
+</componentPackage>
