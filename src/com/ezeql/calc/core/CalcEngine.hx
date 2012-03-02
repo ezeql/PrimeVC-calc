@@ -24,7 +24,7 @@ class CalcEngine
 	
 	public function new() 
 	{
-		mem = operand = 0;
+		clearAll();
 	}
 
 	public function clearAll():Void

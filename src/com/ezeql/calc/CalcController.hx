@@ -21,25 +21,7 @@ class CalcController  extends MVCActor<CalcFacade>, implements IMVCCoreActor
 	
 	private function handleReqOperation(operation:IOperation)
 	{
-		var engine = f.model.calcProxy.vo.value;
-		
-		var oldOp = engine.pendingOperation;
-		if (oldOp != null)
-		{
-			//trace(1);
-			//oldOp.compute(engine);
-			f.model.calcProxy.handleOp(operation);
-			engine.pendingOperation = operation;
-		}
-		else
-		{
-			//trace(2);
-			engine.pendingOperation = operation;
-			engine.mem = engine.operand;
-			engine.operand = 0;
-		}
-		
-		
+		f.model.calcProxy.handleOp(operation);
 		
 	}
 
