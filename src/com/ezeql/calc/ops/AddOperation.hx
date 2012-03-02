@@ -17,29 +17,9 @@ class AddOperation implements IOperation
 	
 	public function compute(engine:CalcEngine):Bool 
 	{
-		if (engine.pendingOperation != null)
-		{
-			if ( Std.is(engine.pendingOperation , AddOperation) )
-			{
+
 				engine.mem +=  engine.operand;
 				engine.operand = 0;
-
-			}
-			else
-			{
-				engine.pendingOperation.compute(engine);
-				engine.pendingOperation = this;
-			}
-		}
-		else
-		{
-			engine.pendingOperation = this;
-			engine.mem = engine.operand;
-			engine.operand = 0;
-		}
-		
-	
-		
 		return true;
 	}
 	
